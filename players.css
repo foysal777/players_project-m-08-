@@ -1,0 +1,149 @@
+body {
+
+
+    font-family: "Convergence", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+nav {
+
+    font-family: "Convergence", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.bg_nav {
+
+
+    background-color: rgb(43, 158, 168);
+}
+
+.imge {
+
+    height: 100px;
+    width: 100px;
+}
+
+.search {
+    height: 50px;
+    box-shadow: 5px 10px 18px #417dec;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+.search:hover {
+    border: 2px solid rgb(58, 184, 189);
+    box-shadow: 5px 10px 18px #63befa;
+}
+
+.search:focus {
+    border: 2px solid rgb(43, 158, 168);
+    outline: none;
+}
+
+.input-group {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.btn {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.fa-regular {
+
+    font-size: 18rem;
+    color: #4fb8f5;
+    margin-bottom: 40px;
+
+}
+
+.input-group-text {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.c_img {
+
+
+    height: 250px;
+    width: 270px;
+    border-radius: 5px;
+}
+
+.div_class {
+
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.aqua {
+
+    color: #5451f8;
+}
+
+.hidden {
+    display: none;
+}
+
+.sorry {
+
+    color: rgb(142, 27, 250);
+    font-size: 50px;
+
+}
+
+.players {
+
+    box-shadow: 4px 4px 8px black;
+    background-color: rgb(34, 166, 179);
+    margin-left: 20px;
+}
+
+.cart_section {
+
+    box-shadow: 4px 4px 8px black;
+    background-color: #fdfdfd;
+
+}
+
+.fa-brands {
+
+    font-size: 40px;
+    justify-content: space-around;
+}
+
+.fab {
+
+    font-size: 40px;
+}
+
+.cart_section {
+
+    font-family: "Convergence", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.div_class1 {
+
+    background-color: rgb(34, 166, 179);
+}
+
+button {
+
+    background-color: rgb(245, 58, 229);
+}

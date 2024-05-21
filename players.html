@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="players.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300..700&family=Convergence&family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Poetsen+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Players.com</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg_nav fs-5">
+                <div class="container-fluid">
+                    <img class="imge" src="images/cricket.png" alt="">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse align-items-right" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Players</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Schedules</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </header>
+    <main>
+
+        <!-- search bar  -->
+        <div id="food_container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="input-group position-relative">
+                        <span class="input-group-text bg-transparent border-0 position-absolute">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input id="searchInput" class="search form-control ps-5" type="text"
+                            placeholder="Searching Players..." aria-label="Search">
+                        <button id="searchButton" type="button" class="btn btn-info">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <br><br><br><br>
+        <!-- end of search bar  -->
+
+
+        <section class="main  d-flex ">
+            <!-- 1st grid  -->
+            <div id = "players" class="players col-lg-8  row justify-content-center gap-3">            
+
+            </div>
+
+
+            <!-- 2nd grid  -->
+            <div class="cart_section col-lg-4 justify-content-center"> 
+                <div  id="add_cart" class="add_cart text-center m-5 fs-5">
+                       The    <span id = "count"> 0 </span> player Already Added
+                         <hr>
+
+                </div>    
+            
+            </div>
+
+        </section>
+
+ <!-- modals  -->
+
+ <div class="modal fade" id="playerModal" tabindex="-1"  >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="playerModalLabel">Player Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+            <div class="modal-body" id="modalContent">
+               
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </main>
+      <br><br>
+    <footer class="bg-dark text-center text-white mt-auto py-4">
+        <div class="container">
+            <div class="mb-2">
+                <a href="https://www.facebook.com" target="_blank" class="text-white me-4">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white me-4">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Players.com. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="players.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
